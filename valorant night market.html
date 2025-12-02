@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VALORANT Night Market Tracker</title>
+  <style>
+    body { font-family: "Segoe UI", sans-serif; background: #0f0f0f; color: #f4f4f4; margin:0; padding:0; }
+    header { text-align:center; padding: 40px 20px; background: linear-gradient(135deg, #ff4655, #bd2333); color:white; }
+    h1 { font-size: 2.5rem; margin:0; }
+    .container { max-width: 900px; margin:auto; padding:20px; }
+    .card { background:#181818; border-radius:12px; padding:20px; margin-bottom:20px;
+            box-shadow: 0px 0px 10px rgba(255,70,85,0.15); border: 2px solid #ff465533; }
+    h2 { color: #ff4655; margin-top:0; }
+    .night-item { padding: 12px 15px; border-bottom: 1px solid #333; }
+    .night-item:last-child { border-bottom: none; }
+    .date { color: #ccc; }
+    footer { text-align:center; padding:20px; color:#888; font-size:0.9rem; }
+    .loading { text-align:center; padding:15px; color:#ff4655; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>VALORANT Night Market Tracker</h1>
+  <p>Fechas actualizadas de los mercados nocturnos de VALORANT</p>
+  <div class="night-item">
+  <img src="valorant_nightmarket.avif" alt="Night Market Diciembre 2025" style="width:10%; border-radius:2px; margin-bottom:2px;">
+  
+</div>
+
+</header>
+
+<div class="container">
+
+  <!-- Próximo Night Market -->
+  <div class="card">
+    <h2>Próximo Night Market</h2>
+    <div id="nextMarket">
+      <div class="night-item">
+        <strong>4 diciembre 2025</strong> ➝ <span class="date">Por definir</span>
+        <div class="night-item">
+  <img src="Valorant-Night-Market-How-It-Works-and-Whats-Available.webp" alt="Night Market Diciembre 2025" style="width:100%; border-radius:8px; margin-bottom:10px;">
+  
+</div>
+      </div>
+      <p style="color:#888; margin-top:10px;">Fecha oficial de inicio confirmada. Fin aún no anunciado.</p>
+    </div>
+  </div>
+
+  <!-- Posibles armas -->
+
+  <div class="card">
+    <h2>Posibles Armas</h2>
+    <h3>Classics:</h3>
+      <img src="skins classic.webp" alt="Classic Skins" style="width:80%; border-radius:8px; margin-top:10px;">
+     <h3>Shortys:</h3>
+     <img src="skins shorty.webp" alt="Shorty Skins" style="width:80%; border-radius:8px; margin-top:10px;">
+      <h3>Frenzy:</h3>
+      <img src="skins frenzy.webp" alt="Frenzy Skins" style="width:80%; border-radius:8px; margin-top:10px;">
+      <h3>Ghosts:</h3>
+      <img src="skins ghost.webp" alt="Ghost Skins" style="width:80%; border-radius:8px; margin-top:10px;">
+      <h3>Sheriffs:</h3>
+      <img src="skins sheriff.webp" alt="Sheriff Skins" style="width:80%; border-radius:8px; margin-top:10px;">
+      <h3>Stringers:</h3>
+      <img src="skins stringer.webp" alt="Stinger Skins" style="width:80%; border-radius:8px; margin-top:10px;">
+      <h3>Spectres:</h3>
+      <img src="skins spectre.webp" alt=" Spectre Skins" style="width:80%; border-radius:8px; margin-top:10px;">
+      <h3>Bucky:</h3>
+      <img src="skins bucky.webp" alt="Bucky Skins" style="width:80%; border-radius:8px; margin-top:10px;">
+      <h3>Judge:</h3>
+      <img src="skins judge.webp" alt="Judge Skins" style="width:80%; border-radius:8px; margin-top:10px;">
+      <h3>Bulldogs:</h3>
+      <img src="skins buldog.webp" alt="Bulldog Skins" style="width:80%; border-radius:8px; margin-top:10px;">
+      <h3>Guardians:</h3>
+      <img src="skins guardian.webp" alt=" Guardian Skins" style="width:80%; border-radius:8px; margin-top:10px;">
+      <h3>Phantoms:</h3>
+      <img src="skins phantom.webp" alt="Phantom Skins" style="width:80%; border-radius:8px; margin-top:10px;">
+      <img src="skins phantom 2.webp" alt="Phantom Skins" style="width:80%; border-radius:8px; margin-top:10px;">
+      <h3>Vandals:</h3>
+      <img src="skins vandal.webp" alt="Vandal Skins" style="width:80%; border-radius:8px; margin-top:10px;">
+      <img src="skins vandal 2.webp" alt="Vandal Skins" style="width:80%; border-radius:8px; margin-top:10px;">
+      <h3>Marshals:</h3>
+      <img src="skins marshal.webp" alt="Marshal Skins" style="width:80%; border-radius:8px; margin-top:10px;">
+      <h3>Outlaws:</h3>
+      <img src="skins outlaw.webp" alt="Outlaw Skins" style="width:80%; border-radius:8px; margin-top:10px;">
+      <h3>Operator:</h3>
+      <img src="skins op.webp" alt="Operator Skins" style="width:80%; border-radius:8px; margin-top:10px;">
+      <h3>Ares:</h3> 
+      <img src="skins ares.webp" alt="Ares Skins" style="width:80%; border-radius:8px; margin-top:10px;">
+      <h3>Odin:</h3>
+      <img src="skins odin.webp" alt="Odin Skins" style="width:80%; border-radius:8px; margin-top:10px;">
+      <h3>Cuchillos:</h3>
+      <img src="skins cuchillo.webp" alt="Knife Skins" style="width:80%; border-radius:8px; margin-top:10px;">
+      <img src="skins cuchillo 2.webp" alt="Knife Skins" style="width:80%; border-radius:8px; margin-top:10px;">
+   
+  </div>
+
+</div>
+<!-- Historial de Night Markets -->
+  <div class="card">
+    <h2>Night Markets Pasados</h2>
+    <div id="history"></div>
+  </div>
+
+</div>
+<footer>
+  Hecho para fans de VALORANT • Última actualización: 2025  
+</footer>
+
+<script>
+const historialNightMarkets = [
+  { inicio: "Septiembre 25 2025", fin: "Octubre 9 2025" },
+  { inicio: "Julio 10 2025", fin: "Julio 24 2025" },
+  { inicio: "Junio 5 2025", fin: "Junio 24 2025" },
+  { inicio: "Abril 9 2025", fin: "Abril 29 2025" },
+  { inicio: "Febrero 13 2025", fin: "Marzo 4 2025" },
+  { inicio: "Diciembre 16 2024", fin: "Enero 7 2025" },
+  { inicio: "Septiembre 27 2024", fin: "Octubre 22 2024" },
+  { inicio: "Agosto 15 2024", fin: "Agosto 28 2024" },
+  { inicio: "Mayo 22 2024", fin: "Junio 12 2024" },
+  { inicio: "Abril 10 2024", fin: "Abril 29 2024" },
+  { inicio: "Enero 31 2024", fin: "Febrero 28 2024" },
+  { inicio: "Diciembre 13 2023", fin: "Enero 8 2024" },
+  { inicio: "Octubre 11 2023", fin: "Octubre 30 2023" },
+  { inicio: "Agosto 9 2023", fin: "Agosto 28 2023" },
+  { inicio: "Junio 14 2023", fin: "Junio 27 2023" },
+  { inicio: "Abril 5 2023", fin: "Abril 25 2023" },
+  { inicio: "Febrero 15 2023", fin: "Febrero 27 2023" },
+  { inicio: "Diciembre 7 2022", fin: "Enero 4 2023" },
+  { inicio: "Septiembre 28 2022", fin: "Octubre 11 2022" },
+  { inicio: "Julio 20 2022", fin: "Agosto 2 2022" },
+  { inicio: "Mayo 18 2022", fin: "Mayo 31 2022" },
+  { inicio: "Abril 6 2022", fin: "Abril 19 2022" },
+  { inicio: "Febrero 9 2022", fin: "Febrero 22 2022" },
+  { inicio: "Diciembre 9 2021", fin: "Diciembre 21 2021" },
+  { inicio: "Septiembre 29 2021", fin: "Octubre 12 2021" },
+  { inicio: "Julio 28 2021", fin: "Agosto 10 2021" },
+  { inicio: "Junio 2 2021", fin: "Junio 15 2021" },
+  { inicio: "Abril 8 2021", fin: "Abril 20 2021" },
+  { inicio: "Febrero 11 2021", fin: "Febrero 23 2021" },
+  { inicio: "Diciembre 10 2020", fin: "Enero 11 2021" }
+];
+
+function cargarHistorial() {
+  const cont = document.getElementById("history");
+  historialNightMarkets.forEach(nm => {
+    cont.innerHTML += `
+      <div class="night-item">
+        <strong>${nm.inicio}</strong> ➝ <span class="date">${nm.fin}</span>
+      </div>`;
+  });
+}
+
+cargarHistorial();
+</script>
+
+</body>
+</html>
